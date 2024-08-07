@@ -1,3 +1,20 @@
+:root {
+  --primary-color: #3692FF;
+  --background-color: #FFFFFF;
+  --section-text-color: #374151;
+  --gnb-bg: #ffffff;
+  --text-color: #333;
+  --content-box-gray-bg: #FCFCFC;
+  --button-text-color: #FFFFFF;
+  --footer-text-color: #9CA3AF;
+  --footer-bg: #111827;
+  --banner-bg: #CFE5FF;
+  --input-background-color: #F3F4F6;
+  --focus-border-color: #3694FF;
+  --submit-button-bg: #9CA3AF;
+  --social-login-bg: #E6F2FF;
+  --link-color: #3182F6;
+}
 /* 공통 영역 */
 html {
   font-size: 100%; /* 1rem = 16px */
@@ -5,11 +22,11 @@ html {
 
 body {
   font-family: 'Pretendard', Poppins, "Noto Sans KR", sans-serif;
-  color: #333;                  /* 기본 글꼴 색상 */
-  background: #CFE5FF;          /* 기본 배경 색상 */
+  color: var(--text-color);       /* 기본 글꼴 색상 */
+  background: var(--banner-bg);   /* 기본 배경 색상 */
   margin: 0;
   padding: 0;
-  font-size: 1rem;              /* 16px */
+  font-size: 1rem;                /* 16px */
 }
 a {
   text-decoration:none;
@@ -18,21 +35,21 @@ a {
 /* 상단 gnb 영역 */
 .gnb-wrapper {
   display: flex;
-  justify-content: center;      /* 가로 정렬: 가운데 */
+  justify-content: center;        /* 가로 정렬: 가운데 */
   position: fixed;
   top: 0;
   width: 100%;
-  height: 70px;             /* 70px */
+  height: 70px;                   /* 70px */
   z-index: 1000;
 }
 .gnb {
   display: flex;
-  align-items: center;          /* 세로 정렬: 하단 */
+  align-items: center;            /* 세로 정렬: 가운데 */
   justify-content: space-between; /* 가로 정렬: 양쪽 끝에 배치하고 균등 분배 */
   width: 100%;
   max-width: 120rem;            /* 1920px */
   min-width: 42.5rem;           /* 680px */              /* 작은 화면에서 보기 좋게 */
-  background-color: #ffffff;
+  background-color: var(--gnb-bg);
   padding: 0 12.5rem;           /* 200px */               /* 왼쪽과 오른쪽에 각각 패딩 추가하여 간격 조절 */
   box-sizing: border-box;
 }
@@ -40,8 +57,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #3692FF;
-  color: #ffffff;
+  background: var(--primary-color);
+  color: var(--button-text-color);
   width: 8rem;                  /* 128px */
   height: 3rem;                 /* 48px */
   font-size: 1rem;              /* 16px */
@@ -62,7 +79,7 @@ a {
   height: 540px;             /* 540px */
   box-sizing: border-box;
   margin: 4.375rem auto 0;      /* 70px */          /* 헤더의 높이만큼 마진 추가하고 가로로 가운데 위치, 하단 마진은 0으로 주어야 함*/
-  background-color: #CFE5FF;
+  background-color: var(--banner-bg);
 }
 .banner-top {
   display: flex;
@@ -86,8 +103,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #3692FF;
-  color: #ffffff;
+  background: var(--primary-color);
+  color: var(--button-text-color);
   width: 22.3125rem;            /* 357px */
   height: 3.5rem;               /* 56px */
   font-size: 1.25rem;           /* 20px */
@@ -103,7 +120,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: var(--background-color);
   margin: 0 auto;
 }
 .section {
@@ -130,7 +147,7 @@ a {
   gap: 1.875rem;                /* 30px */
   width: 100%;
   min-height: 44px;             /* 444px */          /* 내부 요소의 높이가 늘어날 경우 자동으로 증가될 수 있도록 height 대신 min-height 로 설정 */
-  background-color: #FCFCFC;
+  background-color: var(--content-box-gray-bg);
 }
 .contents-box-left {
   justify-content: flex-start;  
@@ -162,19 +179,19 @@ a {
   font-size: 1.125rem;          /* 18px */
   font-weight: 700;
   line-height: 1.625rem;        /* 26px */
-  color: #3692FF;
+  color: var(--primary-color);
 }
 .section-subtitle {
   font-size: 2.5rem;            /* 40px */
   font-weight: 700;
   line-height: 3.5rem;          /* 56px */
-  color: #374151; 
+  color: var(--section-text-color); 
 }
 .section-description {
   font-size: 1.5rem;            /* 24px */
   font-weight: 500;
   line-height: 2rem;            /* 32px */
-  color: #374151; 
+  color: var(--section-text-color); 
 }
 
 /* 하단 배너 영역 */
@@ -206,9 +223,8 @@ a {
   height: 10rem;                /* 160px */
   padding: 1.875rem;            /* 30px */
   margin: 0 auto; /* 가로 가운데 정렬 */
-  color: #9CA3AF;
-  background-color: #111827;
-  border: 1px solid #000000; 
+  color: var(--footer-text-color);
+  background-color: var(--footer-bg);
 }
 .footer-contents {
   width: 70rem;                 /* 1120px */
@@ -221,7 +237,7 @@ a {
   padding: 0 12.5rem;           /* 200px */               /* 왼쪽과 오른쪽에 각각 패딩 추가하여 간격 조절 */
 }
 .footer-contents a {
-  color: #9CA3AF;               /* 링크 글자색 설정 */
+  color: var(--footer-text-color);               /* 링크 글자색 설정 */
   text-decoration: none;        /* 밑줄 제거 */
 }
 .footer-privacy-faq {
