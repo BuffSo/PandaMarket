@@ -42,7 +42,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 4.375rem;                   /* 70px */
+  height: 4.375rem;               /* 70px */
   z-index: 1000;
 }
 .gnb {
@@ -77,9 +77,9 @@ a {
   justify-content: center;      /* 가로 정렬: 가운데 */
   width: 100%;
   max-width: 120rem;            /* 1920px */
-  min-width: 50rem;             /* 800px */               /* 작은 화면에서 보기 좋게 */
+  min-width: 50rem;             /* 800px */              /* 작은 화면에서 보기 좋게 */
   height: 33.75rem;             /* 540px */
-  margin: 4.375rem auto 0;      /* 70px */                /* 헤더의 높이만큼 마진 추가하고 가로로 가운데 위치, 하단 마진은 0으로 주어야 함*/
+  margin: 4.375rem auto 0;      /* 70px */              /* 헤더의 높이만큼 마진 추가하고 가로로 가운데 위치, 하단 마진은 0으로 주어야 함*/
   background-color: var(--banner-bg);
 }
 .banner-top {
@@ -88,8 +88,8 @@ a {
   justify-content: flex-start;
   width: 68.75rem;              /* 1100px */
   height: 21.25rem;             /* 340px */
-  background-image: url('/images/img_home_top.png');      /* 화면이 작아지면 왼쪽 컨텐츠에 살짝 겹치도록 백그라운드 이미지로 설정 */
-  background-size: auto 100%;                             /* 브라우저 글꼴 크기 조정 대비 가로는 자동, 세로는 100%로 조정 */
+  background-image: url('/images/img_home_top.png');   /* 화면이 작아지면 왼쪽 컨텐츠에 살짝 겹치도록 백그라운드 이미지로 설정 */
+  background-size: auto 100%;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -132,8 +132,8 @@ a {
   height: 45rem;                /* 720px */
 }
 .section img {
-  width:  36.75rem;              /* 588px */
-  height: 27.75rem;              /* 444px */
+  width: 36.75rem;              /* 588px */
+  height: 27.75rem;             /* 444px */
 }
 .section-left {
   justify-content: flex-start;
@@ -163,7 +163,7 @@ a {
 }
 .section-message {
   min-height: 14.875rem;        /* 238px */
-  height: auto;                                     /* 높이를 auto로 설정해 세로로 확장되도록 설정 */
+  height: auto;                 /* 높이를 auto로 설정해 세로로 확장되도록 설정 */
   min-width: 5rem;              /* 80px */          /* 세로 확장시 secetion-left 의 높이를 벗어나지 않게 하기 위해 적당한 min-width 설정 */
 }
 .section-message1 {
@@ -203,10 +203,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  width: 68.75rem;                /* 1100px */
-  height: 24.8125rem;             /* 397px */
-  background-image: url('/images/img_home_bottom.png');     /* 화면이 작아지면 왼쪽 컨텐츠에 살짝 겹치도록 백그라운드 이미지 설정 */
-  background-size: auto 100%;                               /* 브라우저 글꼴 크기 조정 대비 가로는 자동, 세로는 100%로 조정 */
+  width: 68.75rem;              /* 1100px */
+  height: 24.8125rem;           /* 397px */
+  background-image: url('/images/img_home_bottom.png');   /* 화면이 작아지면 왼쪽 컨텐츠에 살짝 겹치도록 백그라운드 이미지 설정 */
+  background-size: auto 100%;                             /* 브라우저 글꼴 크기 조정 대비 가로는 자동, 세로는 100%로 조정 */
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -226,7 +226,7 @@ a {
   max-width: 120rem;            /* 1920px */
   height: 10rem;                /* 160px */
   padding: 1.875rem;            /* 30px */
-  margin: 0 auto;                                         /* 가로 가운데 정렬 */
+  margin: 0 auto;               /* 가로 가운데 정렬 */
   color: var(--footer-text-color);
   background-color: var(--footer-bg);
 }
@@ -235,10 +235,10 @@ a {
   height: 1.25rem;              /* 20px */
   min-width: 25rem;             /* 400px */               /* 화면이 작아져도 한줄로 표시되도록 적당한 min-width 지정 */
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   font-size: 1rem;              /* 16px */
   font-weight: 400;
-  padding: 0;                   
+  padding: 0;
 }
 .footer-contents a {
   color: var(--footer-text-color);                        /* 링크 글자색 설정 */
